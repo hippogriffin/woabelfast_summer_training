@@ -22,7 +22,7 @@ Use this for the following exercises and create a folder for each exercise:
 ##### Exercise	3. Use remote state files
 
   * Create a new folder and setup a Terraform remote state backend
-  * Re-create the VPC, Subnets and Security Group again, this time using modules.
+  * Re-create the VPC, Security Group and Instance again, this time using modules.
     * available online: https://registry.terraform.io/browse
 
 ##### Exercise	4. Testing remote state
