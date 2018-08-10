@@ -31,14 +31,14 @@ VirtualEnv is used to created virtual environments for installing and testing py
      - Azure CLI
     
     
-### GIT
+### Git
 
-#### Exercise 1 - Basic Linux
+#### Exercise 1 - Using Linux
 If you are confident in your Linux skills then you can skip this and to exercise 2. 
 The following site has some very useful information about navigating and use the commandline in Linux:
 - https://ryanstutorials.net/linuxtutorial/
 
-#### Exercise 2
+#### Exercise 2 - Using Git
 
 Cheat Sheet - https://www.git-tower.com/blog/git-cheat-sheet
 
