@@ -8,8 +8,36 @@ Setting up the local environment for development is important as you must ensure
 
 This usually isn't an issue when the project is just starting but can become an issue when joining new projects that have been in development for months.
 
+To setup the local environment for this project do the following (MacOS):
 
+    Install brew package manager:
+     - https://brew.sh/
+     
+You can use brew to install a lot of different packages for MacOS such as Chrome/Firefox
+
+    Install VirtualEnv and VirtualEnv Wrapper for python packages:
+     - https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
+     - https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
+     - https://virtualenvwrapper.readthedocs.io/en/latest/install.html
+
+VirtualEnv is used to created virtual environments for installing and testing python packages with PIP, this ensures the system Python version does not get both in the way or broken.
+
+    Install the following packages, choose which type of install you should use (brew, pip, internet)
+     - Vagrant
+     - Virtualbox
+     - Ansible
+     - Terraform
+     - Visual Studio Code
+     - Azure CLI
+    
+    
 ### GIT
+
+#### Exercise 1 - Basic Linux
+If you are confident in your Linux skills then you can skip this and to exercise 2. 
+The following site has some very useful information about navigating and use the commandline in Linux:
+- https://ryanstutorials.net/linuxtutorial/
+
 #### Exercise 2
 
 Cheat Sheet - https://www.git-tower.com/blog/git-cheat-sheet
