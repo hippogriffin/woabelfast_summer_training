@@ -6,7 +6,7 @@
 Create your own branch again with a relevant name, create a folder with your name.  
 Use this for the following exercises and create a folder for each exercise:
 
-##### Exercise	1. Create a terraform file with hardcoded elements
+##### Exercise	1. Create a single terraform file with the following elements
   * AWS Provider
   * VPC
   * Subnets
