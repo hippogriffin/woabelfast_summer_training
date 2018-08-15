@@ -17,7 +17,7 @@ Use this for the following exercises and create a folder for each exercise:
  
 * Convert the file from exercise 1 to use variables on common items (region, AMI, Instance size).
 
-When you have pushed your code to branch, checkout master and run git pull.	
+When you have pushed your code to your branch merge it with master (assign to someone else to merge), checkout master and run `git pull`.	
 
 You should now be able to checkout any other branches in the repo, try checking out someone elses branch (git checkout \<branchname\>)
 		
