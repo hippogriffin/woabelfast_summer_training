@@ -17,7 +17,11 @@ Use this for the following exercises and create a folder for each exercise:
  
 * Convert the file from exercise 1 to use variables on common items (region, AMI, Instance size).
 
-*Note how you cannot create/interact with other peoples Terraform code, if you run their code without the statefile it will create a brand new environment identical to theirs.*
+When you have pushed your code to branch, checkout master and run git pull.	
+
+You should now be able to checkout any other branches in the repo, try checking out someone elses branch (git checkout \<branchname\>)
+		
+Note how you cannot modify/interact with other peoples Terraform code, if you run Terraform apply with their code without the statefile it will create a brand new environment identical to theirs.
 	
 ##### Exercise	3. Use remote state files
 
