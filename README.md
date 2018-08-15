@@ -63,8 +63,9 @@ This file details all filenames/regex for files we want git to ignore, this coul
 Note the use of a DOT at the start of a file, in Linux/Unix world this is a hidden file which wont show up in terminal with a basic `ls -l`
 
 ##### As a team do the following tasks:
-* As a team create a .gitignore file and google/dicuss for common files types/names that you would normally add to this file.
-* Push and merge this to the master branch
+* Create a .gitignore file
+    * Google and dicuss for common files types/names that you would normally add to this file.
+    * Push and merge this to the master branch
 
 ##### Git best practices:
    * Branch Naming 
