@@ -9,7 +9,7 @@
   * Read what each does and the benefit of it
     * vagrant-cachier
     * vagrant-vbox-snapshot
-    * vagrant-vbguest'
+    * vagrant-vbguest
 
 ##### Exercise 3 - Custom networking and hostname
   * Create a private network and give the VM a custom hostname:
