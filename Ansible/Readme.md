@@ -26,3 +26,8 @@
   * https://galaxy.ansible.com/geerlingguy/firewall/
 * Deploy nginx base index.html from the nginx role above.
 * Create 'proxy' and 'web' VMs and test port 80 connectivity to 'web' from 'proxy' (curl for example)
+
+#### Exercise 3
+
+* Run an adhoc command against one or all of your VMs to find out which kernel version they are running:	
+	* https://docs.ansible.com/ansible/2.5/user_guide/intro_adhoc.html
