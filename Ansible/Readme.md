@@ -2,7 +2,7 @@
 
 #### Exercise 1
 * Create a new Ansible folder under your own folder and create an exercise folder here.
-* Copy Vagrantfile from exercise 2 of the Vagrant training to this folder
+* Copy Vagrantfile from exercise 5 of the Vagrant training to this folder
 * Create Ansible folder structure according to best practice
 	* http://docs.ansible.com/ansible/devel/user_guide/playbooks_best_practices.html
 * Create an ansible inventory for proxy, web and db in whichever format you like for now
