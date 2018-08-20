@@ -19,13 +19,20 @@
 	
 #### Exercise 2
 * Copy the Vagrantfile from exercise 1
-* Use Geerlingguy's Nginx module (from Ansible Galaxy) and create test site config on the proxy and web VMs (ensure host is listening on port 80) 
+* Using Geerlingguy's Nginx module (from Ansible Galaxy):
   * https://galaxy.ansible.com/docs/mazer/examples.html#installing-roles
   * https://galaxy.ansible.com/geerlingguy/nginx/
-* Use Geerlingguy's Firewall role from Ansible galaxy to open up port 80 on the 'web' VM to allow traffic from 'proxy' 
+  
+  Create a test proxy config on the `proxy` VM and a default site on the `web` VM (ensure hosts are listening on port 80)
+  
+* Using Geerlingguy's Firewall role (from Ansible Galaxy):
   * https://galaxy.ansible.com/geerlingguy/firewall/
-* Deploy nginx base index.html from the nginx role above.
-* Create 'proxy' and 'web' VMs and test port 80 connectivity to 'web' from 'proxy' (curl for example)
+  
+  Open up port 80 on the `web` VM to allow traffic from 'proxy' 
+  
+* Once Ansible config is complete, use vagrant to provision the Proxy and Web VMs
+* Test port 80 connectivity to 'web' from 'proxy' (curl for example)
+* Add a local host entry to your Mac for example.com so you can view the site via a browser
 
 #### Exercise 3
 
