@@ -21,17 +21,20 @@
 #### Exercise 2
 * Copy the Vagrantfile from exercise 1
 * Using Geerlingguy's Nginx module (from Ansible Galaxy):
-  * https://galaxy.ansible.com/docs/mazer/examples.html#installing-roles
-  * https://galaxy.ansible.com/geerlingguy/nginx/
-  
-  Create a test proxy config on the `proxy` VM and a default site on the `WordPress` VM (ensure hosts are listening on port 80)
+	``` 
+	https://galaxy.ansible.com/docs/mazer/examples.html#installing-roles
+	https://galaxy.ansible.com/geerlingguy/nginx/ 
+	```
+  * Create a test proxy configuration on the `proxy` VM and a default site on the `WordPress` VM (ensure hosts are listening on port 80)
+  * The proxy configuration should forward traffic to the WordPress VM
   
 * Using Geerlingguy's Firewall role (from Ansible Galaxy):
-  * https://galaxy.ansible.com/geerlingguy/firewall/
+  ``` 
+  https://galaxy.ansible.com/geerlingguy/firewall/ 
+  ```
+  * Open up port 80 on the `WordPress` VM to allow traffic from 'proxy' 
   
-  Open up port 80 on the `WordPress` VM to allow traffic from 'proxy' 
-  
-* Once Ansible config is complete, use vagrant to provision the Proxy and WordPress VMs
+* Once your Ansible config is complete, use vagrant to provision the Proxy and WordPress VMs
 * Test port 80 connectivity to 'WordPress' from 'proxy' (curl for example)
 * Add a local host entry to your Mac for example.com so you can view the site via a browser
 
