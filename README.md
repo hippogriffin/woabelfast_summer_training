@@ -24,6 +24,7 @@ VirtualEnv is used to created virtual environments for installing and testing py
 
     Install the following packages, choose which type of install you should use (brew, pip, internet)
      - iterm2
+        - oh-my-zsh - https://github.com/robbyrussell/oh-my-zsh
      - Vagrant
      - Virtualbox
      - Ansible
