@@ -15,6 +15,9 @@ To setup the local environment for this project do the following (MacOS):
      
 You can use brew to install a lot of different packages for MacOS such as Chrome/Firefox
 
+    Install Iterm2 as a new terminal
+     - https://sourabhbajaj.com/mac-setup/iTerm/
+
     Install VirtualEnv and VirtualEnv Wrapper for python packages:
      - https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
      - https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
