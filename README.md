@@ -15,9 +15,6 @@ To setup the local environment for this project do the following (MacOS):
      
 You can use brew to install a lot of different packages for MacOS such as Chrome/Firefox
 
-    Install Iterm2 as a new terminal
-     - https://sourabhbajaj.com/mac-setup/iTerm/
-
     Install VirtualEnv and VirtualEnv Wrapper for python packages:
      - https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
      - https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
@@ -26,6 +23,7 @@ You can use brew to install a lot of different packages for MacOS such as Chrome
 VirtualEnv is used to created virtual environments for installing and testing python packages with PIP, this ensures the system Python version does not get both in the way or broken.
 
     Install the following packages, choose which type of install you should use (brew, pip, internet)
+     - iterm2
      - Vagrant
      - Virtualbox
      - Ansible
