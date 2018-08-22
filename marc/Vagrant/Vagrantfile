@@ -54,5 +54,10 @@ end
   # do something like:  config.cache.scope = :box
   end 
 
+  groups = {
+      "frontend" => ["proxy"],
+      "backend" => ["web,db"],
+    }
+
 
 end
