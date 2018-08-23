@@ -46,7 +46,7 @@ end
    end
    Vagrant.configure("2") do |config|
   config.vm.provision "shell",
-    inline: "sudo apt-get update"
+    inline: "sudo yum update"
 end
   end
  
@@ -56,7 +56,7 @@ end
 
   groups = {
       "frontend" => ["proxy"],
-      "backend" => ["web,db"],
+      "backend" => ["web","db"],
     }
 
 
