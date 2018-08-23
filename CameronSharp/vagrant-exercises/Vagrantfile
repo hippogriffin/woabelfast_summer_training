@@ -37,6 +37,11 @@ Vagrant.configure("2") do |config|
   # part 2
     config.vm.provision "shell", inline: "sudo yum makecache; sudo yum update -y"
 
+  # installing nginx
+
+  #  config.vm.provision "shell", inline: "sudo yum install epel-release"
+  #  config.vm.provision "shell", inline: "sudo yum install nginx"
+
   end
 
   # EXERCISE 5
