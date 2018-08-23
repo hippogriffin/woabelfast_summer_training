@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
   
   #Vagrant-Cachier
   if Vagrant.has_plugin?("vagrant-cachier")
-    config.cache.auto_detect = true
+    config.cache.scope = :box
   end
 
   config.vm.define "proxy" do |proxy|
@@ -22,7 +22,10 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |v|
     v.memory = 512
     v.cpus = 2
-    config.vm.provision :shell, :inline  => 'sudo yum -y update'
+    config.vm.provision "shell", inline:
+    'sudo yum update -y
+    sudo yum install epel-release -y
+    sudo yum install nginx -y'
   end
 end
 
@@ -35,7 +38,7 @@ end
   config.vm.provider "virtualbox" do |v|
     v.memory = 512
     v.cpus = 2
-    config.vm.provision :shell, :inline  => 'sudo yum -y update'
+    config.vm.provision "shell", inline: "sudo yum -y update"
   end  
 end
 
@@ -48,7 +51,7 @@ end
     config.vm.provider "virtualbox" do |v|
       v.memory = 512
       v.cpus = 2
-      config.vm.provision :shell, :inline  => 'sudo yum -y update'
+      config.vm.provision "shell", inline: "sudo yum -y update"
     end 
   end
 
