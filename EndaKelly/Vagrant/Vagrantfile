@@ -24,6 +24,7 @@ Vagrant.configure("2") do |config|
     v.cpus = 2
     config.vm.provision "shell", inline: $script
   end
+  end
 
   config.vm.define "wordpress" do |wordpress|
   #Network
@@ -62,13 +63,18 @@ end
   }
 
   $script = <<-SCRIPT
+  cat << EOF > /etc/yum.repos.d/nginx.repo
+  
+  [nginx]
+  name=nginx repo
+  baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+  gpgcheck=0
+  enabled=1
+  EOF
+  
   sudo yum update -y
-  echo updating the system...
-    sudo yum install epel-release -y
-    echo installing epel-release repo...
-    sudo yum install nginx -y
-    echo installing nginx...
-    SCRIPT
+  sudo yum install nginx -y
+  
+  SCRIPT
 
-end
 end
