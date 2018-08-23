@@ -1,5 +1,5 @@
 provider "aws" {
-
+  region = "eu-west-1"
 }
 data "aws_vpcs" "foo" {
   tags {
@@ -21,16 +21,8 @@ resource "aws_security_group" "subnet" {
     protocol    = "tcp"
   }
 }
-data "aws_instance" "foo" {
-  instance_id = "i-instanceid"
+data "aws_instance" "web" {
+  ami           = "ami-3548444c"
+  instance_type = "t1.micro"
 
-  filter {
-    name   = "image-id"
-    values = ["ami-xxxxxxxx"]
-  }
-
-  filter {
-    name   = "tag:Name"
-    values = ["instance-name-tag"]
-  }
 }
