@@ -6,7 +6,11 @@ variable "instance_type" {
   default = "t2.micro" 
 }
 
+variable "region" {
+  default = "eu-west-1"
+}
 
+###################################################
 
 # Configure the AWS Provider
 provider "aws" {
@@ -59,5 +63,15 @@ resource "aws_instance" "web" {
 
   tags {
     Name = "HelloWorld"
+  }
+}
+
+
+# Storage of state file into S3 bucket
+terraform {
+  backend "s3" {
+    bucket = "brian-webops-academy"
+    key    = "Terraform/dev.tf"
+    region = "eu-west-1"
   }
 }
