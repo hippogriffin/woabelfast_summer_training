@@ -1,9 +1,18 @@
 # Variables
+variable "region" {
+ default = "eu-west-2" 
+}
+variable "ami" {
+ default = "ami-00846a67"
+}
+variable "instance_type" {
+ default = "t2.micro"
+}
 
 
 # Configure the AWS Provider
 provider "aws" {
-  region     = "eu-west-2"
+  region     = "${var.region}"
 }
 
 
@@ -41,10 +50,19 @@ resource "aws_vpc" "main" {
 
 # Instance
 resource "aws_instance" "web" {
-  ami           = "ami-00846a67"
-  instance_type = "t2.micro"
+  ami           = "${var.ami}"
+  instance_type = "${var.instance_type}"
 
   tags {
     Name = "Jack's Instance"
   }
+}
+
+# Store state file in S3 bucket
+terraform {
+ backend "s3" {
+   bucket = "jackwoa"
+   key    = "terraform.tfstate"
+   region = "eu-west-2"
+ }
 }
