@@ -7,7 +7,7 @@ variable "VPC_cidr" {
 }
 
 variable "Subnet_cidr" {
-    default = "10.1.0.0/16"
+    default = "10.1.0.0/24"
 }
 
 variable "from" {
