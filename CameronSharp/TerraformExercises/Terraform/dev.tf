@@ -45,3 +45,12 @@ resource "aws_instance" "web" {
     Name = "Cameron"
   }
 }
+
+# Exercise 3
+terraform {
+  backend "s3" {
+    bucket = "cameron-woa"
+    key = "cameron/woa_dev.tfstate"
+    region = "eu-west-1"
+  }
+}
