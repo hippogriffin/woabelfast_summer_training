@@ -49,15 +49,6 @@ resource "aws_instance" "ek-webops-instance" {
    }
 }
 
-# configure S3 bucket
-resource "aws_s3_bucket" "ek-webops-s3-bucket" {
-    bucket = "ek-webops-s3-bucket"
-
-    tags {
-      Name = "EK-WebOps-S3-Bucket"
-    }      
-}
-
 terraform {
  backend "s3" {
  encrypt = true

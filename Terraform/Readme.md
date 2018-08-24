@@ -25,7 +25,7 @@ Note how you cannot modify/interact with other peoples Terraform code, if you ru
 	
 ##### Exercise	3. Use remote state files
 
-  * Create a new folder and setup a Terraform remote state backend
+  * Setup a Terraform remote state backend with AWS S3
   * Re-create the VPC, Security Group and Instance again, this time using modules.
     * available online: https://registry.terraform.io/browse
 
