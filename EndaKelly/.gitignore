@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
+=======
 # OS-specific
 .DS_Store
 
@@ -51,3 +68,8 @@ doc/
 
 # Box storage for spec
 test/vagrant-spec/boxes/*.box
+>>>>>>> f197cf55707d9f9dcf10d70439f6b2d0ce53a357
+
+.DS_Store
+*.DS_Store
+../.DS_Store
