@@ -22,7 +22,7 @@
 * Copy the Vagrantfile from exercise 1
 * Using Geerlingguy's Nginx module (from Ansible Galaxy):
 	``` 
-	https://galaxy.ansible.com/docs/mazer/examples.html#installing-roles
+	https://docs.ansible.com/ansible/2.5/cli/ansible-galaxy.html
 	https://galaxy.ansible.com/geerlingguy/nginx/ 
 	```
   * Create a test proxy configuration on the `proxy` VM and a default site on the `WordPress` VM (ensure hosts are listening on port 80)
