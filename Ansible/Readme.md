@@ -32,7 +32,7 @@
   ``` 
   https://galaxy.ansible.com/geerlingguy/firewall/ 
   ```
-  * Open up port 80 on the `WordPress` VM to allow traffic from 'proxy' 
+  * Open up port 80 and port 22 on the `WordPress` VM to allow traffic from 'proxy' 
   
 * Once your Ansible config is complete, use vagrant to provision the Proxy and WordPress VMs
 * Test port 80 connectivity to 'WordPress' from 'proxy' (curl for example)
